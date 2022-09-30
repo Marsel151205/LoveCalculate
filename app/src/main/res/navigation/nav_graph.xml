@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loveCalculate">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
         android:id="@+id/loveResultFragment"
@@ -11,6 +11,7 @@
         android:label="fragment_love_result"
         tools:layout="@layout/fragment_love_result" >
     </fragment>
+
     <fragment
         android:id="@+id/loveCalculate"
         android:name="com.example.lovecalculate.ui.fragments.LoveCalculateFragment"
@@ -20,9 +21,23 @@
             android:id="@+id/action_loveCalculate_to_loveResultFragment"
             app:destination="@id/loveResultFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.lovecalculate.ui.fragments.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.lovecalculate.ui.fragments.onboard.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/clearBackStack"
+            app:destination="@id/loveCalculate"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
