@@ -1,7 +1,9 @@
-package com.example.lovecalculate.di
+package com.example.lovecalculate.data.di
 
-import android.content.Context
-import com.example.lovecalculate.api.LoveApi
+import com.example.lovecalculate.App
+import com.example.lovecalculate.data.api.LoveApi
+import com.example.lovecalculate.data.dao.Dao
+import com.example.lovecalculate.data.room.AppDataBase
 import com.example.lovecalculate.helper.SharedPreferences
 import dagger.Module
 import dagger.Provides

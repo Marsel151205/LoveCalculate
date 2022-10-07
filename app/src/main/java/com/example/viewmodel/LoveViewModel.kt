@@ -3,7 +3,7 @@ package com.example.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.example.lovecalculate.Repository
-import com.example.lovecalculate.models.LoveModel
+import com.example.lovecalculate.data.models.LoveModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

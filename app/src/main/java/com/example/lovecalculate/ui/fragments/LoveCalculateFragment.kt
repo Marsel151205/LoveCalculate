@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.example.lovecalculate.App
 import com.example.lovecalculate.R
 import com.example.lovecalculate.databinding.FragmentLoveCalculateBinding
 import com.example.lovecalculate.helper.SharedPreferences
@@ -42,6 +43,7 @@ class LoveCalculateFragment : Fragment() {
                     etFirstName.text.toString(),
                     etSecondName.text.toString()
                 ).observe(requireActivity(), Observer {
+                    App.appDataBase.loveDao().insert(it)
                     val bundle = Bundle()
                     bundle.putSerializable("model", it)
                     findNavController().navigate(R.id.loveResultFragment, bundle)

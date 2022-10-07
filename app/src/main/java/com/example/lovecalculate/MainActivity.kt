@@ -6,6 +6,7 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.lovecalculate.databinding.ActivityMainBinding
 import com.example.viewmodel.LoveViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -22,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.findNavController()
+
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navController);
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.onBoardingFragment) {

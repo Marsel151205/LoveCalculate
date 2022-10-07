@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lovecalculate.databinding.ItemOnBoardingBinding
-import com.example.lovecalculate.models.OnBoardingModel
+import com.example.lovecalculate.data.models.OnBoardingModel
 import com.example.lovecalculate.ui.inter.TransitionLoveCalculate
 
 class OnBoardingAdapter(

@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.lovecalculate.R
 import com.example.lovecalculate.databinding.FragmentOnBoardingBinding
 import com.example.lovecalculate.helper.SharedPreferences
-import com.example.lovecalculate.models.OnBoardingModel
+import com.example.lovecalculate.data.models.OnBoardingModel
 import com.example.lovecalculate.ui.adapters.OnBoardingAdapter
 import com.example.lovecalculate.ui.inter.TransitionLoveCalculate
 import dagger.hilt.android.AndroidEntryPoint

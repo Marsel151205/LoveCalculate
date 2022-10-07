@@ -1,4 +1,4 @@
-package com.example.lovecalculate.models
+package com.example.lovecalculate.data.models
 
 data class OnBoardingModel(
     val image: Int,
