@@ -33,7 +33,7 @@ class OnBoardingAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun onBind(model: OnBoardingModel) {
-            binding.ivOnBoarding.setImageResource(model.image)
+            binding.lottieImage.setAnimation(model.image)
             binding.tvTittle.text = model.tittle
             binding.tvDescription.text = model.description
             binding.btnGo.text = model.nameBtn
